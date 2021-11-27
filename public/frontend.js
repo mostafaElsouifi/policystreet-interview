@@ -1,6 +1,7 @@
 const form = document.querySelector('form')
 const input = document.getElementById('searchInput')
 const loadingSpinner = document.querySelector('.loading-spinner')
+const button = document.querySelector('.search-btn');
 form.addEventListener('submit', (e)=>{
     
     if(input.value === ''){
@@ -9,4 +10,7 @@ form.addEventListener('submit', (e)=>{
     }
     
     loadingSpinner.classList.remove('hide')
+    input.disabled = true;
+    button.disabled = true;
+
 })

@@ -5,4 +5,5 @@ const router = express.Router()
 router.get('/', controller.homePage)
 
 router.post('/search', controller.search)
+
 module.exports = router;
