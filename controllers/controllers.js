@@ -12,7 +12,10 @@ module.exports.homePage = (req,res)=>{
 }
 
 const scrapingScript = async(searchTerm)=>{
-    const browser = await puppeteer.launch({headless: false})
+    const browser = await puppeteer.launch({
+        headless: true,
+        args: ["--no-sandbox"]
+    })
     const page = await browser.newPage();
     await page.setViewport({
         width: 1400,
