@@ -1,0 +1,98 @@
+*{
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+body{
+    color:white;
+    height: 100vh;
+    display: grid;
+    grid-template-areas: "header" "main" "footer";
+    grid-template-rows: 3rem 1fr 3rem;
+    background: #bdc3c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #2c3e50, #bdc3c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #2c3e50, #bdc3c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+header{
+    padding-left:30px;
+    background-color:#0F2027
+}
+
+main{
+    margin: 3rem auto;
+    
+
+}
+.container form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.search-input{
+    width: 500px;
+    height:40px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    padding-left: 20px;
+    font-size:20px
+}
+.search-btn{
+    text-decoration: none;
+    border : 1px solid #0F2027;
+    border-radius: 10px;
+    padding: 5px 25px;
+    color:white;
+    background-color: #0F2027;
+    font-weight: 600;
+
+}
+.search-btn:hover{
+    background-color: white;
+    color:#0F2027
+}
+.loading-spinner{
+    margin-top:50px;
+    color: green;
+    font-size: 40px;
+}
+footer{
+    background-color:#0F2027;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+/*class lists*/
+.hide{
+    display: none;
+}
+
+
+
+/*styling the table */
+
+.container-result{
+    margin:auto 20px;
+    max-width: 1000px;
+    background-color: white;
+    color: black;
+}
+table{
+    border: 0.2px solid grey;
+    padding: 10px;
+    
+}
+table img{
+    max-width:100px;
+    max-height:100px;
+}
+td{
+    border: 0.2px solid grey;
+    padding:5px;
+}
+tr{
+    margin-bottom: 5px;
+}
