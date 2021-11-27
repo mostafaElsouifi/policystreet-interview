@@ -51,11 +51,11 @@ const scrapingScript = async(searchTerm)=>{
             return allData
     
         })
-        //await browser.close()
+        await browser.close()
         return data;
       }catch(e){
           console.log(e)
-          //await browser.close()
+          await browser.close()
       }
 
 }
