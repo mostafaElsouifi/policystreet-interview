@@ -10,7 +10,6 @@ form.addEventListener('submit', (e)=>{
     }
     
     loadingSpinner.classList.remove('hide')
-    input.disabled = true;
     button.disabled = true;
 
 })
