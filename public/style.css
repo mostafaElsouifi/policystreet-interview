@@ -9,7 +9,7 @@ body{
     height: 100vh;
     display: grid;
     grid-template-areas: "header" "main" "footer";
-    grid-template-rows: 3rem 1fr 3rem;
+    grid-template-rows: 4rem 1fr 4rem;
     background: #bdc3c7;  /* fallback for old browsers */
 
 }
@@ -20,8 +20,17 @@ header{
     justify-content: space-between;
 }
 h3{
-    margin-top:7px;
+    padding-top:7px;
+   
+}
+h3 a{
     font-size:1.2rem;
+    text-decoration: none;
+    color: #bdc3c7;
+}
+h3 a:hover{
+    color:white;
+    font-weight: 600;
 }
 
 .weather{
