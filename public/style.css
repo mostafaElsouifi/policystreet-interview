@@ -5,7 +5,7 @@
 }
 
 body{
-    color:white;
+    color:#EEEEEE;
     height: 100vh;
     display: grid;
     grid-template-areas: "header" "main" "footer";
@@ -15,9 +15,26 @@ body{
 }
 header{
     padding-left:30px;
-    background-color:#0F2027
+    background-color:#0F2027;
+    display: flex;
+    justify-content: space-between;
+}
+h3{
+    margin-top:7px;
+    font-size:1.2rem;
 }
 
+.weather{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:5px;
+    margin-top:10px;
+}
+.degree{
+    margin-left:30px;
+    margin-right:20px;
+}
 main{
     margin: 3rem auto;
     
@@ -47,7 +64,7 @@ main{
 
 }
 .search-btn:hover{
-    background-color: white;
+    background-color: #bdc3c7;
     color:#0F2027
 }
 .loading-spinner{

@@ -1,7 +1,9 @@
+const fetch = require('node-fetch');
 const shoppe = require('../scripts/shoppe.js')
-module.exports.homePage = (req,res)=>{
-
-    res.render('index')
+module.exports.homePage = async(req,res)=>{
+    const response = await fetch('http://api.weatherapi.com/v1/current.json?key=b425506227934b86818152110212711&q=Malaysia&aqi=no');
+    const weatherData = await response.json();
+    res.render('index', {weatherData})
 }
 
 

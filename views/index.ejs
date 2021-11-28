@@ -10,7 +10,18 @@
 </head>
 <body>
     <header>
-        <h1>Hi, I am Mostafa Elsouifi</h1>
+        <h3>Hi, I am Mostafa Elsouifi</h1>
+        <div class="weather">
+            <div class="time">
+                <%= weatherData.location.localtime %>
+            </div>
+            <div class="degree">
+                <%= weatherData.current.temp_c %> C
+            </div>
+            <div class="weather-icon">
+                <img src="<%= weatherData.current.condition.icon %>">
+            </div>
+        </div>
     </header>
     <main>
         <div class="container">
